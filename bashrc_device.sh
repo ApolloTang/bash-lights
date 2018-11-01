@@ -5,6 +5,9 @@ export IAM=lights
 export PLATFORM=mac
 export RIPGREP_CONFIG_PATH="/Users/apollotang/1/1-sy/configurations/ripgrep/dot.ripgreprc"
 
+#/ Vim binary in macvim, this need to be updated when ever macvim has a new version
+export VIM_IN_MACVIM="/usr/local/Cellar/macvim/8.1-147/MacVim.app/Contents/MacOS/Vim"
+
 
 ### Enable Glob support
 #/ https://gist.github.com/reggi/475793ea1846affbcfe8
@@ -61,11 +64,6 @@ export SCALA_HOME="$HOME/opt/local/scala-2.11.2/bin"
 export dir_vendor_server="/Users/apollotang/0/z-local/vendor-server/"
 
 
-###
-#/ Import configuration that change frequently or private
-if [ -f "$dir_config_device/git-sub-local/local-only.sh" ]; then
-  . "$dir_config_device/git-sub-local/local-only.sh"
-fi
 
 
 ###/ Run things
