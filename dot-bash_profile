@@ -1,0 +1,94 @@
+#/ Debug Messsages ------------------------------------------------
+# echo -e "Kernel Information: " `uname -smr`
+# echo 'echo from ~/.bash_profile -> ~/Users/apollotang/1/1-sy/configurations/bashights/dot-bash_profile'
+
+##
+#/ Notes: ---------------------------------------------------------
+#/
+#/ When you start an interactive shell (log in, open terminal or
+#/ iTerm in OS X, or create a new tab in iTerm) the following files
+#/ are read and run, in this order:
+#/
+#/     /etc/profile
+#/     /etc/bashrc
+#/     $HOME/.profile || $HOME/.bash_profile
+#/     $HOME/.bashrc (only because .bashrc is sourced in .bash_profile)
+#/
+#/ When an interactive shell, that is not a login shell, is started
+#/ (when you run "bash" from inside a shell, or when you start a
+#/ shell in xwindows [xterm/gnome-terminal/etc] ) the following
+#/ files are read and executed, in this order:
+#/
+#/     /etc/bashrc
+#/     $HOME/.bashrc
+#/
+
+##
+#/ [Important variable] ------------------------------------------
+  export dir_sy=/Users/apollotang/1/1-sy
+  export dir_bash_device_config=$dir_sy/configurations/bash/lights
+  export XDG_CONFIG_HOME="$dir_sy/dot-config"
+
+##
+#/ [Load .bashrc] ------------------------------------------------
+  if [ -n $BASH_VERSION ]; then
+    if [ -f $dir_bash_device_config/dot-bashrc ]; then
+      . $dir_bash_device_config/dot-bashrc
+    fi
+  fi
+
+
+##
+#/ [Fink] ---------------------------------------------------------
+#/  To make the software installed by Fink available in all of your future terminal
+#/  shells, add '. /sw2/bin/init.sh' to the init script '.profile' or '.bash_profile'
+#/  in your home directory. The program /sw2/bin/pathsetup.sh can help with this.
+#/  Enjoy.
+
+  #  test -r /sw2/bin/init.sh && . /sw2/bin/init.sh
+
+
+##
+#/ [MacPorts] ----------------------------------------------------
+
+  # export PATH=/opt/local/bin:/opt/local/sbin:/usr/local/mysql/bin:$PATH  # OS-X Specific, with MacPorts and MySQL installed
+  # export PATH=/opt/local/bin:/opt/local/sbin:$PATH                       # OS-X Specific, with MacPorts installed
+    export PATH=$PATH:/opt/local/bin:/opt/local/sbin                       # Use this one so that Homebrew has precedance over MacPorts
+  #
+
+
+##
+#/ [GoodSync] -----------------------------------------------------
+  export PATH="/Users/apollotang/Library/Application Support/GoodSync":$PATH
+  export PATH="/Library/Application Support/GoodSync":$PATH
+
+
+##
+#/ [Google Cloud SDK] ----------------------------------------------
+
+  #/ The next line updates PATH for the Google Cloud SDK.
+  source '/Users/apollotang/google-cloud-sdk/path.bash.inc'
+  #/ The next line enables bash completion for gcloud.
+  source '/Users/apollotang/google-cloud-sdk/completion.bash.inc'
+
+
+
+
+# export PYENV_ROOT="$HOME/.pyenv"
+# export PATH="$PYENV_ROOT/bin:$PATH"
+# eval "$(pyenv init -)"
+
+
+
+#/ Alias that Split path into line -------------------------------------------------
+#/
+#/ for linux
+#  alias info-path='echo $PATH | sed s/:/\\n/g | less'
+#/   ref: stackoverflow.com/questions/18234378/using-sed-to-split-a-string-with-a-delimiter
+#/
+#/  for osx
+alias info-path="echo $PATH | sed 's/:/\\`echo -e '\n\r'`/g' | cat"  #for osx
+#/  in the above, not sure why "\\" before first "`" but not b4 the second "`"
+#/  ref http://stackoverflow.com/questions/723157/how-to-insert-a-newline-in-front-of-a-pattern
+
+

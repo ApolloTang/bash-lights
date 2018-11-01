@@ -1,0 +1,49 @@
+# # Debug Messsages -----------------------------------------------
+# echo 'echo from ~/.bashrc -> /Users/apollotang/1/1-sy/configurations/bash/lights/dot-bashrc'
+
+dir_config_device=$dir_sy/configurations/bash/lights
+dir_config_common=$dir_sy/configurations/bash/bash-common
+dir_config_private=$dir_sy/configurations/bash/lights-private
+
+dir_sy1=$HOME/1/1-sy
+dir_scripts1=$HOME/1/1-sy/scripts
+dir_scripts2=$HOME/2/2-sy/scripts
+
+#/ load essential like PATH
+  if [ -f $dir_config_device/bashrc_device.sh ]; then
+    . $dir_config_device/bashrc_device.sh
+  fi
+
+
+#/ load common stuff
+  if [ -f $dir_config_common/bashrc_common.sh ]; then
+    . $dir_config_common/bashrc_common.sh
+  fi
+
+  if [ -f $dir_config_common/aliases_common.sh ]; then
+    . $dir_config_common/aliases_common.sh
+  fi
+
+  if [ -f $dir_config_common/terminal_n_colors.sh ]; then
+    . $dir_config_common/terminal_n_colors.sh
+  fi
+
+  if [ -f $dir_config_common/prompt.sh ]; then
+    . $dir_config_common/prompt.sh
+  fi
+
+  if [ -f $dir_config_common/start_ssh_agent.sh ]; then
+    . $dir_config_common/start_ssh_agent.sh
+  fi
+
+
+#/ load Alias that only exist here
+  if [ -f $dir_config_device/aliases_device.sh ]; then
+    . $dir_config_device/aliases_device.sh
+  fi
+
+
+#/ load private stuff
+  if [ -f $dir_config_private/local-only.sh ]; then
+    . $dir_config_private/local-only.sh
+  fi
