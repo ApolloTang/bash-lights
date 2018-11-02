@@ -5,9 +5,6 @@ export IAM=lights
 export PLATFORM=mac
 export RIPGREP_CONFIG_PATH="/Users/apollotang/1/1-sy/configurations/ripgrep/dot.ripgreprc"
 
-#/ Vim binary in macvim, this need to be updated when ever macvim has a new version
-export VIM_IN_MACVIM="/usr/local/Cellar/macvim/8.1-151/MacVim.app/Contents/bin/vim"
-
 
 ### Enable Glob support
 #/ https://gist.github.com/reggi/475793ea1846affbcfe8
