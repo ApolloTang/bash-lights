@@ -11,9 +11,11 @@ export RIPGREP_CONFIG_PATH="/Users/apollotang/1/1-sy/configurations/ripgrep/dot.
 shopt -s globstar
 
 
-### Path
-#/
-#/ @NOTE: reverse order: the last one will be prepended to the path
+#/ PATH Reverse Order:
+#/ -------------------
+#/ The last one on the list is place to the begining of the PATH
+#/ so the bottom one in the list take precedence
+#/ Reverse order always has higher precedence over natural order
 #/
 PATH="$HOME/script/bin2":$PATH
 PATH="$HOME/script/bin":$PATH
@@ -23,12 +25,17 @@ PATH="$HOME/Applications/kdiff3.app/Contents/MacOS":$PATH   # kdiff3
 # PATH=/Users/apollotang/opt/local/anaconda2/bin:$PATH
 # PATH=/Users/apollotang/opt/local/anaconda3/bin:$PATH
 PATH=/usr/local/Cellar/coreutils/8.30/bin:$PATH             # manually link coreutil b/c gsync has already symlinc to /Library/Application\ Support/GoodSync/gsync
-#/
-#/ @NOTE: normal order: the last one will be appended to the path
+
+#/ PATH Natural Order
+#/ -------------------
+#/ The first one on the list is placed on begining the PATH
+#/ so the top one in the list take precedence
+#/ Natural order always has lower precedence to reverse order
 #/
 PATH=$PATH:"$HOME/opt/local/scala-2.11.2/bin"
 PATH=$PATH:"/usr/local/Cellar/neovim-dot-app/HEAD/bin/gnvim"
 PATH=$PATH:"$HOME/opt/devtools/autotools-bin/bin"
+
 export PATH
 
 
