@@ -11,29 +11,37 @@ dir_scripts2=$HOME/2/2-sy/scripts
 
 
 
+
 #/ load essential like PATH
----------------------------
+#/ ------------------------
+
   if [ -f $dir_config_device/bashrc_device.sh ]; then
     . $dir_config_device/bashrc_device.sh
   fi
 
 
-#/ load configuration common to device
---------------------------------------
+
+#/ load configuration common to devices
+#/ ------------------------------------
+
   if [ -f $dir_config_common/bashrc_common.sh ]; then
     . $dir_config_common/bashrc_common.sh
   fi
 
 
-#/ load alias common to device
-------------------------------
+
+#/ load aliases common to devices
+#/ ------------------------------
+
   if [ -f $dir_config_common/aliases_common.sh ]; then
     . $dir_config_common/aliases_common.sh
   fi
 
 
+
 #/ load preset modules
-----------------------
+#/ -------------------
+
   if [ -f $dir_config_common/terminal_n_colors.sh ]; then
     . $dir_config_common/terminal_n_colors.sh
   fi
@@ -49,7 +57,8 @@ dir_scripts2=$HOME/2/2-sy/scripts
 
 
 #/ load private stuff
----------------------
+#/ ------------------
+
   if [ -f $dir_config_private/local-only.sh ]; then
     . $dir_config_private/local-only.sh
   fi
@@ -57,7 +66,10 @@ dir_scripts2=$HOME/2/2-sy/scripts
 
 
 #/ load local project location and configuration
-------------------------------------------------
+#/ ---------------------------------------------
+
+  # will rename this to project_device.sh
+  
   if [ -f $dir_config_device/aliases_device.sh ]; then
     . $dir_config_device/aliases_device.sh
   fi
