@@ -12,9 +12,44 @@ alias chrome1="/Applications/Google\ Chrome.app/Contents/MacOS/Google\ Chrome --
 alias chrome2="/Applications/Google\ Chrome.app/Contents/MacOS/Google\ Chrome --args --profile-directory=\"Profile 1\""
 
 
+
 alias run-vendor-server="cd ~/0/z-local/vendor-server/; ./start.sh"
-alias run-labRunner1-3030="cd ~/0/z-local/labs-runner-3030/; ./start.sh"
-alias run-labRunner2-3040="cd ~/0/z-local/labs-runner-3040/; ./start.sh"
+
+
+
+#/ [lab runner 3040] ---------------------------
+function eeeLabRunner3040 {
+  local dir='/Users/apollotang/0/z-local/labs-runner-3040'
+  local fullPathToFile="$dir/start.sh"
+  (cd $dir && mvim $fullPathToFile)
+}
+function sssLabRunner3040 {
+  local dir='/Users/apollotang/0/z-local/labs-runner-3040'
+  local file=start.sh
+  cd $dir && ./$file
+}
+function gggLabRunner3040 {
+  local dir='/Users/apollotang/0/z-local/labs-runner-3040'
+  cd $dir
+}
+
+#/ [lab runner 3030] ---------------------------
+function eeeLabRunner3030 {
+  local dir='/Users/apollotang/0/z-local/labs-runner-3030'
+  local fullPathToFile="$dir/start.sh"
+  (cd $dir && mvim $fullPathToFile)
+}
+function sssLabRunner3030 {
+  local dir='/Users/apollotang/0/z-local/labs-runner-3030'
+  local file=start.sh
+  cd $dir && ./$file
+}
+function gggLabRunner3030 {
+  local dir='/Users/apollotang/0/z-local/labs-runner-3030'
+  cd $dir
+}
+
+
 
 #/ [Bashrc setting editing qucklink]
 ##
