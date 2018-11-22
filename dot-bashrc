@@ -65,12 +65,10 @@ dir_scripts2=$HOME/2/2-sy/scripts
 
 
 
-#/ load local project location and configuration
-#/ ---------------------------------------------
+#/ load local project setting and configuration
+#/ --------------------------------------------
 
-  # will rename this to project_device.sh
-  
-  if [ -f $dir_config_device/aliases_device.sh ]; then
-    . $dir_config_device/aliases_device.sh
+  if [ -f "${dir_config_device}/bashrc_device_proj.sh" ]; then
+    . "${dir_config_device}/bashrc_device_proj.sh"
   fi
-  
+

@@ -16,7 +16,7 @@ alias run-vendor-server="cd ~/0/z-local/vendor-server/; ./start.sh"
 alias run-labRunner1-3030="cd ~/0/z-local/labs-runner-3030/; ./start.sh"
 alias run-labRunner2-3040="cd ~/0/z-local/labs-runner-3040/; ./start.sh"
 
-
+#/ [Bashrc setting editing qucklink]
 ##
 #/ Bashrc
 alias sssBashrc='source ~/.bashrc'
@@ -30,10 +30,18 @@ alias gggBashrcLights="cd $pppBashrcLights"
 function eeeBashrcLights { (cd $pppBashrcLights && mvim bashrc_device.sh) }
 
 ##
-#/ bashrc local
+#/ bashrc private
 export pppBashrcLocal='/Users/apollotang/1/1-sy/configurations/bash/lights/git-sub-local/'
 alias gggBashrcLocal="cd $pppBashrcLocal"
 function eeeBashrcLocal { (cd $pppBashrcLocal && mvim local-only.sh) }
+
+##
+#/ bashrc device project
+function eeeBashrcDeviceProj {
+  local dir='/Users/apollotang/1/1-sy/configurations/bash/lights'
+  local file="$dir/bashrc_device_proj.sh"
+  (cd $dir && mvim $file)
+}
 
 ##
 #/ vim
