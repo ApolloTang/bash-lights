@@ -27,7 +27,17 @@
 #/ [Important variable] ------------------------------------------
   export dir_sy=/Users/apollotang/1/1-sy
   export dir_bash_device_config=$dir_sy/configurations/bash/lights
-  export XDG_CONFIG_HOME="$dir_sy/dot-config"
+
+  #/ :::::::::::::::::::::::::::
+  #/ :: About XDG_CONFIG_HOME ::
+  #/ :::::::::::::::::::::::::::
+  #/
+  #/ Since some applicaiont does not obey XDG_CONFIG_HOME
+  #/ it is now no longer declear here, instead
+  #/ I will sybolically link it from $HOME to $dir_sy/dot-config
+  #
+  # export XDG_CONFIG_HOME="$dir_sy/dot-config"
+
 
 ##
 #/ [Load .bashrc] ------------------------------------------------
