@@ -12,7 +12,6 @@ alias chrome1="/Applications/Google\ Chrome.app/Contents/MacOS/Google\ Chrome --
 alias chrome2="/Applications/Google\ Chrome.app/Contents/MacOS/Google\ Chrome --args --profile-directory=\"Profile 1\""
 
 
-
 #/ [run vendor] -------------------------------
   alias rrrVendorServer="cd ~/0/z-local/vendor-server/; ./start.sh"
   alias gggVendorServer="cd ~/0/z-local/vendor-server/"
@@ -136,7 +135,9 @@ export pppVimrc='/Users/apollotang/1/1-sy/configurations/vim/vimrc/'
 alias gggVimrc="cd $pppVimrc"
 function eeeVimrc { ( cd $pppVimrc && mvim dot-vimrc ) }
 
-
+##
+#/ misc
+alias eeeCheatSheet='mvim /Users/apollotang/0/_g-frequent/things-2-memorize/things-2-memorize-content/'
 
 ################################################
 #echo '.bash_aliases_device_lights reading done'
