@@ -4,7 +4,7 @@
 export IAM=lights
 export PLATFORM=mac
 export RIPGREP_CONFIG_PATH="/Users/apollotang/1/1-sy/configurations/ripgrep/dot.ripgreprc"
-export VIM_IN_MACVIM_BIN="/usr/local/Cellar/macvim/HEAD-79541d2_2/MacVim.app/Contents/MacOS/Vim"
+# export VIM_IN_MACVIM_BIN="/usr/local/Cellar/macvim/HEAD-79541d2_2/MacVim.app/Contents/MacOS/Vim"
 
 
 ### Enable Glob support
@@ -24,9 +24,10 @@ PATH="$HOME/bin":$PATH
 PATH="$HOME/1/1-sy/scripts/bin":$PATH                       # custom scripts link to here
 PATH="$HOME/Applications/kdiff3.app/Contents/MacOS":$PATH   # kdiff3
 # PATH=/Users/apollotang/opt/local/anaconda2/bin:$PATH
-PATH=/Users/apollotang/opt/local/anaconda3/bin:$PATH
+# PATH=/Users/apollotang/opt/local/anaconda3/bin:$PATH
 PATH=/usr/local/Cellar/coreutils/8.30/bin:$PATH             # manually link coreutil b/c gsync has already symlinc to /Library/Application\ Support/GoodSync/gsync
 PATH=/Users/apollotang/.yarn/bin:$PATH
+PATH=/Applications/MacVim.app/Contents/bin/:$PATH
 
 
 #/ PATH Natural Order
