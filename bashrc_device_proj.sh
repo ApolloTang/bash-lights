@@ -35,17 +35,17 @@ alias chrome2="/Applications/Google\ Chrome.app/Contents/MacOS/Google\ Chrome --
 
 #/ [lab runner 3331] { ---------------------------
   function eeeLabRunner1_desktopLab {
-    local dir='/Users/apollotang/0/z-local/labs-runner-3331'
+    local dir='/Users/apollotang/0/z-local/starter-labs-runner-3331'
     local fullPathToFile="$dir/start.sh"
     (cd $dir && mvim $fullPathToFile)
   }
   function rrrLabRunner1_desktopLab {
-    local dir='/Users/apollotang/0/z-local/labs-runner-3331'
+    local dir='/Users/apollotang/0/z-local/starter-labs-runner-3331'
     local file=start.sh
     cd $dir && ./$file
   }
   function gggLabRunner1_desktopLab {
-    local dir='/Users/apollotang/0/z-local/labs-runner-3331'
+    local dir='/Users/apollotang/0/z-local/starter-labs-runner-3331'
     cd $dir
   }
   function gggLab1_desktopLab {
@@ -57,17 +57,17 @@ alias chrome2="/Applications/Google\ Chrome.app/Contents/MacOS/Google\ Chrome --
 #/ [lab runner 3332] ---------------------------
 #/
   function eeeLabRunner2 {
-    local dir='/Users/apollotang/0/z-local/labs-runner-3332'
+    local dir='/Users/apollotang/0/z-local/starter-labs-runner-3332'
     local fullPathToFile="$dir/start.sh"
     (cd $dir && mvim $fullPathToFile)
   }
   function rrrLabRunner2 {
-    local dir='/Users/apollotang/0/z-local/labs-runner-3332'
+    local dir='/Users/apollotang/0/z-local/starter-labs-runner-3332'
     local file=start.sh
     cd $dir && ./$file
   }
   function gggLabRunner2 {
-    local dir='/Users/apollotang/0/z-local/labs-runner-3332'
+    local dir='/Users/apollotang/0/z-local/starter-labs-runner-3332'
     cd $dir
   }
   #/ no goto command because this can change from
@@ -82,17 +82,17 @@ alias chrome2="/Applications/Google\ Chrome.app/Contents/MacOS/Google\ Chrome --
 #/ [lab runner 3333] ---------------------------
 #/
   function eeeLabRunner3 {
-    local dir='/Users/apollotang/0/z-local/labs-runner-3333'
+    local dir='/Users/apollotang/0/z-local/starter-labs-runner-3333'
     local fullPathToFile="$dir/start.sh"
     (cd $dir && mvim $fullPathToFile)
   }
   function rrrLabRunner3 {
-    local dir='/Users/apollotang/0/z-local/labs-runner-3333'
+    local dir='/Users/apollotang/0/z-local/starter-labs-runner-3333'
     local file=start.sh
     cd $dir && ./$file
   }
   function gggLabRunner3 {
-    local dir='/Users/apollotang/0/z-local/labs-runner-3333'
+    local dir='/Users/apollotang/0/z-local/starter-labs-runner-3333'
     cd $dir
   }
   function gggLab3 {
