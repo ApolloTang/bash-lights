@@ -131,9 +131,16 @@ function eeeBashrcDeviceProj {
 
 ##
 #/ vim
-export pppVimrc='/Users/apollotang/1/1-sy/configurations/vim/vimrc/'
+export pppVimrc='/Users/apollotang/1/1-sy/configurations/vim/vimrc'
 alias gggVimrc="cd $pppVimrc"
 function eeeVimrc { ( cd $pppVimrc && mvim dot-vimrc ) }
+
+##
+#/ ideavim
+export pppIdeavimrc='/Users/apollotang/1/1-sy/configurations/ideavim'
+alias gggIdeavimrc="cd $pppIdeavimrc"
+function eeeIdeavimrc { ( cd $pppIdeavimrc && mvim dot-ideavimrc ) }
+
 
 ##
 #/ misc
