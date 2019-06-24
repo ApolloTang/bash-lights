@@ -5,6 +5,7 @@ export IAM=lights
 export PLATFORM=mac
 export RIPGREP_CONFIG_PATH="/Users/apollotang/1/1-sy/configurations/ripgrep/dot.ripgreprc"
 # export VIM_IN_MACVIM_BIN="/usr/local/Cellar/macvim/HEAD-79541d2_2/MacVim.app/Contents/MacOS/Vim"
+# export ONI_NEOVIM_PATH="/usr/local/Cellar/neovim/0.3.4/bin/nvim"
 
 
 ### Enable Glob support
