@@ -82,6 +82,9 @@ export dir_vendor_server="/Users/apollotang/0/z-local/vendor-server/"
     export PKG_CONFIG_PATH="/usr/local/opt/sqlite/lib/pkgconfig"
 
 
+###
+#/ React Native
+export REACT_EDITOR="mvim"
 
 
 ###/ Run things
