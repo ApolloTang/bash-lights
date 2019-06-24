@@ -72,6 +72,15 @@ export SCALA_HOME="$HOME/opt/local/scala-2.11.2/bin"
 #/ local directory
 export dir_vendor_server="/Users/apollotang/0/z-local/vendor-server/"
 
+###
+#/ sqlite installed via brew
+  export PATH="/usr/local/opt/sqlite/bin:$PATH"
+  #/ For compilers to find sqlite you may need to set:
+    export LDFLAGS="-L/usr/local/opt/sqlite/lib"
+    export CPPFLAGS="-I/usr/local/opt/sqlite/include"
+  #/ For pkg-config to find sqlite you may need to set:
+    export PKG_CONFIG_PATH="/usr/local/opt/sqlite/lib/pkgconfig"
+
 
 
 
