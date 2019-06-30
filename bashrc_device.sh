@@ -28,7 +28,6 @@ PATH="$HOME/Applications/kdiff3.app/Contents/MacOS":$PATH   # kdiff3
 # PATH=/Users/apollotang/opt/local/anaconda3/bin:$PATH
 PATH=/usr/local/Cellar/coreutils/8.30/bin:$PATH             # manually link coreutil b/c gsync has already symlinc to /Library/Application\ Support/GoodSync/gsync
 PATH=/Users/apollotang/.yarn/bin:$PATH
-PATH=/Applications/MacVim.app/Contents/bin/:$PATH
 
 
 #/ PATH Natural Order
@@ -37,6 +36,7 @@ PATH=/Applications/MacVim.app/Contents/bin/:$PATH
 #/ so the top one in the list take precedence
 #/ Natural order always has lower precedence to reverse order
 #/
+PATH=$PATH:/Applications/MacVim.app/Contents/bin
 PATH=$PATH:"$HOME/opt/local/scala-2.11.2/bin"
 PATH=$PATH:"/usr/local/Cellar/neovim-dot-app/HEAD/bin/gnvim"
 PATH=$PATH:"$HOME/opt/devtools/autotools-bin/bin"
