@@ -146,5 +146,12 @@ function eeeIdeavimrc { ( cd $pppIdeavimrc && mvim dot-ideavimrc ) }
 #/ misc
 alias eeeCheatSheet='mvim /Users/apollotang/0/_g-frequent/things-2-memorize/things-2-memorize-content/'
 
+
+##
+#/ ReactKnowledgeUpdate2019
+export pppReactKnowledgeUpdate='/Users/apollotang/0/g-reacts/react-knowledge-update-2019'
+alias gggReactKnowledgeUpdate="cd $pppReactKnowledgeUpdate"
+function eeeReactKnowledgeUpdate { ( cd $pppReactKnowledgeUpdate && mvim . ) }
+
 ################################################
 #echo '.bash_aliases_device_lights reading done'
