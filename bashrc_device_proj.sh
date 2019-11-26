@@ -147,11 +147,31 @@ function eeeIdeavimrc { ( cd $pppIdeavimrc && mvim dot-ideavimrc ) }
 alias eeeCheatSheet='mvim /Users/apollotang/0/_g-frequent/things-2-memorize/things-2-memorize-content/'
 
 
+
 ##
 #/ ReactKnowledgeUpdate2019
 export pppReactKnowledgeUpdate='/Users/apollotang/0/g-reacts/react-knowledge-update-2019'
 alias gggReactKnowledgeUpdate="cd $pppReactKnowledgeUpdate"
 function eeeReactKnowledgeUpdate { ( cd $pppReactKnowledgeUpdate && mvim . ) }
+
+##
+#/ RtlKentLesson
+export pppRtlKentLesson='/Users/apollotang/3/g-authors/g-kent/kent-testing-couse/05-test-react-components-with-jest-and-react-testing-library/wf/t08-notes-n-codes'
+alias gggRtlKentLesson="cd $pppRtlKentLesson"
+function eeeRtlKentLesson { ( cd $pppRtlKentLesson && mvim . ) }
+
+##
+#/ RTrainingDay1
+export pppRTrainingDay1='/Users/apollotang/1/1-work/rewardOps/react-training-2019--day-1'
+alias gggRTrainingDay1="cd $pppRTrainingDay1"
+function eeeRTrainingDay1 { ( cd $pppRTrainingDay1 && mvim . ) }
+
+##
+#/ RTrainingDay2Prep
+export pppRTrainingDay2Prep='/Users/apollotang/1/1-work/rewardOps/react-training-2019--day-2-preps-1'
+alias gggRTrainingDay2Prep="cd $pppRTrainingDay2Prep"
+function eeeRTrainingDay2Prep { ( cd $pppRTrainingDay2Prep && mvim . ) }
+
 
 ################################################
 #echo '.bash_aliases_device_lights reading done'
