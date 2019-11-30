@@ -167,10 +167,10 @@ alias gggRTrainingDay1="cd $pppRTrainingDay1"
 function eeeRTrainingDay1 { ( cd $pppRTrainingDay1 && mvim . ) }
 
 ##
-#/ RTrainingDay2Prep
-export pppRTrainingDay2Prep='/Users/apollotang/1/1-work/rewardOps/react-training-2019--day-2-preps-1'
-alias gggRTrainingDay2Prep="cd $pppRTrainingDay2Prep"
-function eeeRTrainingDay2Prep { ( cd $pppRTrainingDay2Prep && mvim . ) }
+#/ RTrainingDay2
+export pppRTrainingDay2='/Users/apollotang/1/1-work/rewardOps/react-training-2019--day-2'
+alias gggRTrainingDay2="cd $pppRTrainingDay2"
+function eeeRTrainingDay2 { ( cd $pppRTrainingDay2 && mvim . ) }
 
 
 ################################################
