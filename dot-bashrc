@@ -1,7 +1,7 @@
 # # Debug Messsages -----------------------------------------------
 # echo 'echo from ~/.bashrc -> /Users/apollotang/1/1-sy/configurations/bash/lights/dot-bashrc'
 
-dir_config_device=$dir_sy/configurations/bash/lights
+dir_config_device=$dir_sy/configurations/bash/bash-lights
 dir_config_common=$dir_sy/configurations/bash/bash-common
 dir_config_private=$dir_sy/configurations/bash/lights-private
 
@@ -46,13 +46,13 @@ dir_scripts2=$HOME/2/2-sy/scripts
     . $dir_config_common/terminal_n_colors.sh
   fi
 
-  if [ -f $dir_config_common/prompt.sh ]; then
-    . $dir_config_common/prompt.sh
-  fi
+  # if [ -f $dir_config_common/prompt.sh ]; then
+  #   . $dir_config_common/prompt.sh
+  # fi
 
-  if [ -f $dir_config_common/start_ssh_agent.sh ]; then
-    . $dir_config_common/start_ssh_agent.sh
-  fi
+#  if [ -f $dir_config_common/start_ssh_agent.sh ]; then
+#    . $dir_config_common/start_ssh_agent.sh
+#  fi
 
 
 
@@ -72,3 +72,7 @@ dir_scripts2=$HOME/2/2-sy/scripts
     . "${dir_config_device}/bashrc_device_proj.sh"
   fi
 
+
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
