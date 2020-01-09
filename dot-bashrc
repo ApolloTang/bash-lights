@@ -46,9 +46,9 @@ dir_scripts2=$HOME/2/2-sy/scripts
     . $dir_config_common/terminal_n_colors.sh
   fi
 
-  # if [ -f $dir_config_common/prompt.sh ]; then
-  #   . $dir_config_common/prompt.sh
-  # fi
+  if [ -f $dir_config_common/prompt.sh ]; then
+    . $dir_config_common/prompt.sh
+  fi
 
 #  if [ -f $dir_config_common/start_ssh_agent.sh ]; then
 #    . $dir_config_common/start_ssh_agent.sh
