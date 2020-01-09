@@ -8,7 +8,7 @@ export RIPGREP_CONFIG_PATH="/Users/apollo.tang/1/1-sy/configurations/ripgrep/dot
 
 ### Enable Glob support
 #/ https://gist.github.com/reggi/475793ea1846affbcfe8
-shopt -s globstar
+# shopt -s globstar
 
 
 #/ PATH Reverse Order:
