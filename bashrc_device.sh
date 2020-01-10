@@ -35,8 +35,7 @@ PATH=/Users/apollo.tang/.yarn/bin:$PATH
 #/ Natural order always has lower precedence to reverse order
 #/
 PATH=$PATH:/Applications/MacVim.app/Contents/bin
-PATH=$PATH:"$HOME/opt/local/scala-2.11.2/bin"
-PATH=$PATH:"/usr/local/Cellar/neovim-dot-app/HEAD/bin/gnvim"
+PATH=$PATH:/Applications/Visual\ Studio\ Code.app/Contents/Resources/app/bin
 PATH=$PATH:"$HOME/opt/devtools/autotools-bin/bin"
 
 export PATH

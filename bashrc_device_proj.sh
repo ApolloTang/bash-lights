@@ -105,13 +105,13 @@ alias chrome2="/Applications/Google\ Chrome.app/Contents/MacOS/Google\ Chrome --
 #/ [Bashrc setting editing qucklink]
 ##
 #/ Bashrc
-alias sssBashrc='source ~/.bashrc'
+alias sssBashrc='source ~/.zshrc'
 export pppBashrc='/Users/apollo.tang/1/1-sy/configurations/bash/'
 alias gggBashrc="cd $pppBashrc"
 
 ##
 #/ bashrc lights
-export pppBashrcLights='/Users/apollo.tang/1/1-sy/configurations/bash/lights/'
+export pppBashrcLights='/Users/apollo.tang/1/1-sy/configurations/bash/bash-lights/'
 alias gggBashrcLights="cd $pppBashrcLights"
 function eeeBashrcLights { (cd $pppBashrcLights && mvim bashrc_device.sh) }
 
@@ -124,7 +124,7 @@ function eeeBashrcPrivate { (cd $pppBashrcPrivate && mvim local-only.sh) }
 ##
 #/ bashrc device project
 function eeeBashrcDeviceProj {
-  local dir='/Users/apollo.tang/1/1-sy/configurations/bash/lights'
+  local dir='/Users/apollo.tang/1/1-sy/configurations/bash/bash-lights'
   local file="$dir/bashrc_device_proj.sh"
   (cd $dir && mvim $file)
 }
