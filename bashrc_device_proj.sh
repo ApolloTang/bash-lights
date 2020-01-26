@@ -145,9 +145,10 @@ function eeeIdeavimrc { ( cd $pppIdeavimrc && mvim dot-ideavimrc ) }
 
 
 ##
-#/ misc
-alias eeeCheatSheet='mvim /Users/apollotang/0/_g-frequent/things-2-memorize/things-2-memorize-content/'
-
+#/ things to memorized (my cheat sheet)
+export pppMemo='/Users/apollotang/0/_g-frequent/things-2-memorize'
+alias gggMemo="cd $pppMemo"
+function eeeMemo { ( cd $pppMemo && mvim things-2-memorize-content ) }
 
 
 ##
