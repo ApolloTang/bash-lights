@@ -113,7 +113,7 @@ alias gggBashrc="cd $pppBashrc"
 #/ bashrc lights
 export pppBashrcLights='/Users/apollotang/1/1-sy/configurations/bash/lights/'
 alias gggBashrcLights="cd $pppBashrcLights"
-function eeeBashrcLights { (cd $pppBashrcLights && mvim bashrc_device.sh) }
+function eeeBashrcLights { (cd $pppBashrcLights && mvim .) }
 
 ##
 #/ bashrc common
