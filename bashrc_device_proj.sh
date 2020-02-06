@@ -102,18 +102,24 @@ alias chrome2="/Applications/Google\ Chrome.app/Contents/MacOS/Google\ Chrome --
 
 
 
-#/ [Bashrc setting editing qucklink]
+#/ [zshrc setting editing qucklink]
 ##
-#/ Bashrc
-alias sssBashrc='source ~/.zshrc'
-export pppBashrc='/Users/apollo.tang/1/1-sy/configurations/bash/'
-alias gggBashrc="cd $pppBashrc"
+#/ zshrc
+alias sssZshrc='source ~/.zshrc'
+export pppZshrc='/Users/apollo.tang/1/1-sy/configurations/bash/'
+alias gggZshrc="cd $pppZshrc"
 
 ##
 #/ bashrc lights
 export pppBashrcLights='/Users/apollo.tang/1/1-sy/configurations/bash/bash-lights/'
 alias gggBashrcLights="cd $pppBashrcLights"
-function eeeBashrcLights { (cd $pppBashrcLights && mvim bashrc_device.sh) }
+function eeeBashrcLights { (cd $pppBashrcLights && mvim .) }
+
+##
+#/ bashrc common
+export pppBashrcCommon='/Users/apollo.tang/1/1-sy/configurations/bash/bash-common/'
+alias gggBashrcCommon="cd $pppBashrcCommon"
+function eeeBashrcCommon { (cd $pppBashrcCommon && mvim .) }
 
 ##
 #/ bashrc private
@@ -135,17 +141,12 @@ export pppVimrc='/Users/apollo.tang/1/1-sy/configurations/vim/vimrc'
 alias gggVimrc="cd $pppVimrc"
 function eeeVimrc { ( cd $pppVimrc && mvim dot-vimrc ) }
 
-##
-#/ ideavim
-export pppIdeavimrc='/Users/apollo.tang/1/1-sy/configurations/ideavim'
-alias gggIdeavimrc="cd $pppIdeavimrc"
-function eeeIdeavimrc { ( cd $pppIdeavimrc && mvim dot-ideavimrc ) }
-
 
 ##
-#/ misc
-alias eeeCheatSheet='mvim /Users/apollo.tang/0/_g-frequent/things-2-memorize/things-2-memorize-content/'
-
+#/ things to memorized (my cheat sheet)
+export pppMemo='/Users/apollo.tang/0/_g-frequent/things-2-memorize'
+alias gggMemo="cd $pppMemo"
+function eeeMemo { ( cd $pppMemo && mvim things-2-memorize-content ) }
 
 
 ##
@@ -153,24 +154,6 @@ alias eeeCheatSheet='mvim /Users/apollo.tang/0/_g-frequent/things-2-memorize/thi
 export pppReactKnowledgeUpdate='/Users/apollo.tang/0/g-reacts/react-knowledge-update-2019'
 alias gggReactKnowledgeUpdate="cd $pppReactKnowledgeUpdate"
 function eeeReactKnowledgeUpdate { ( cd $pppReactKnowledgeUpdate && mvim . ) }
-
-##
-#/ RtlKentLesson
-export pppRtlKentLesson='/Users/apollo.tang/3/g-authors/g-kent/kent-testing-couse/05-test-react-components-with-jest-and-react-testing-library/wf/t08-notes-n-codes'
-alias gggRtlKentLesson="cd $pppRtlKentLesson"
-function eeeRtlKentLesson { ( cd $pppRtlKentLesson && mvim . ) }
-
-##
-#/ RTrainingDay1
-export pppRTrainingDay1='/Users/apollo.tang/1/1-work/rewardOps/react-training-2019--day-1'
-alias gggRTrainingDay1="cd $pppRTrainingDay1"
-function eeeRTrainingDay1 { ( cd $pppRTrainingDay1 && mvim . ) }
-
-##
-#/ RTrainingDay2
-export pppRTrainingDay2='/Users/apollo.tang/1/1-work/rewardOps/react-training-2019--day-2'
-alias gggRTrainingDay2="cd $pppRTrainingDay2"
-function eeeRTrainingDay2 { ( cd $pppRTrainingDay2 && mvim . ) }
 
 
 ################################################
