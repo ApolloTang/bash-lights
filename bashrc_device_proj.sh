@@ -107,15 +107,19 @@ alias chrome2="/Applications/Google\ Chrome.app/Contents/MacOS/Google\ Chrome --
 #/ Bashrc
 alias sssBashrc='source ~/.bashrc'
 export pppBashrc='/Users/apollotang/1/1-sy/configurations/bash/'
-export pppBashrcCommon='/Users/apollotang/1/1-sy/configurations/bash/bash-common'
 alias gggBashrc="cd $pppBashrc"
-alias gggBashrcCommon="cd $pppBashrcCommon"
 
 ##
 #/ bashrc lights
 export pppBashrcLights='/Users/apollotang/1/1-sy/configurations/bash/lights/'
 alias gggBashrcLights="cd $pppBashrcLights"
 function eeeBashrcLights { (cd $pppBashrcLights && mvim bashrc_device.sh) }
+
+##
+#/ bashrc common
+export pppBashrcCommon='/Users/apollotang/1/1-sy/configurations/bash/bash-common/'
+alias gggBashrcCommon="cd $pppBashrcCommon"
+function eeeBashrcCommon { (cd $pppBashrcCommon && mvim .) }
 
 ##
 #/ bashrc private
