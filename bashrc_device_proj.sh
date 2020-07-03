@@ -160,19 +160,19 @@ function eeeReactKnowledgeUpdate { ( cd $pppReactKnowledgeUpdate && mvim . ) }
 #/ mx-cp1
 export pppMX1='/Users/apollo.tang/9/repos/mx-cp1'
 alias gggMX1="cd $pppMX1"
-function eeeMX1 { ( cd $pppMX1 && mvim . ) }
+function eeeMX1 { ( cd $pppMX1 && mvim README.md ) }
 
 ##
 #/ mx-cp2
 export pppMX2='/Users/apollo.tang/9/repos/mx-cp2'
 alias gggMX2="cd $pppMX2"
-function eeeMX2 { ( cd $pppMX2 && mvim . ) }
+function eeeMX2 { ( cd $pppMX2 && mvim README.md ) }
 
 ##
 #/ mx-cp3
 export pppMX3='/Users/apollo.tang/9/repos/mx-cp3'
 alias gggMX3="cd $pppMX3"
-function eeeMX3 { ( cd $pppMX3 && mvim . ) }
+function eeeMX3 { ( cd $pppMX3 && mvim README.md ) }
 
 ################################################
 #echo '.bash_aliases_device_lights reading done'
