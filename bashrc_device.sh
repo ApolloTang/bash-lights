@@ -47,6 +47,7 @@ export PATH
 ###
 #/ Ruby
 export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
+export GEM_HOME="$HOME/.gem"       # https://stackoverflow.com/a/53949737
 
 
 ###
