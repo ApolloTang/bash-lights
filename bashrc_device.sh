@@ -19,6 +19,7 @@ shopt -s globstar
 #/ so the bottom one in the list take precedence
 #/ Reverse order always has higher precedence over natural order
 #/
+PATH="$HOME/.gem/bin":$PATH
 PATH="$HOME/script/bin2":$PATH
 PATH="$HOME/script/bin":$PATH
 PATH="$HOME/bin":$PATH
