@@ -180,5 +180,20 @@ alias gggRTrainingDay2="cd $pppRTrainingDay2"
 function eeeRTrainingDay2 { ( cd $pppRTrainingDay2 && mvim . ) }
 
 
+#####
+#/ work
+
+##
+#/ mx-cp1
+export pppMX1='/Users/apollotang/9/repos/mx-cp1'
+alias gggMX1="cd $pppMX1"
+function eeeMX1 { ( cd $pppMX1 && mvim README.md ) }
+
+##
+#/ mx-cp2
+export pppMX2='/Users/apollotang/9/repos/mx-cp2'
+alias gggMX2="cd $pppMX2"
+function eeeMX2 { ( cd $pppMX2 && mvim README.md ) }
+
 ################################################
 #echo '.bash_aliases_device_lights reading done'
