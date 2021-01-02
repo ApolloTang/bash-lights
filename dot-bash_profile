@@ -101,4 +101,6 @@ alias info-path="echo $PATH | sed 's/:/\\`echo -e '\n\r'`/g' | cat"  #for osx
 #/  in the above, not sure why "\\" before first "`" but not b4 the second "`"
 #/  ref http://stackoverflow.com/questions/723157/how-to-insert-a-newline-in-front-of-a-pattern
 
-
+# added when install haskell compile but .bashrc already loaded as dot-bashrc above
+# [[ -f ~/.bashrc ]] && source ~/.bashrc # ghcup-env
+#

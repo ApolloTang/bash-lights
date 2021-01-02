@@ -72,3 +72,10 @@ dir_scripts2=$HOME/2/2-sy/scripts
     . "${dir_config_device}/bashrc_device_proj.sh"
   fi
 
+
+#/ added by haskell compiler enviroment
+#/ I think it is enviroment setup for haskell compiler
+#/ --------------------------------------------
+[ -f "/Users/apollotang/.ghcup/env" ] && source "/Users/apollotang/.ghcup/env" # ghcup-env
+
+
