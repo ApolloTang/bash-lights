@@ -174,5 +174,17 @@ export pppMX3='/Users/apollo.tang/9/repos/mx-cp3'
 alias gggMX3="cd $pppMX3"
 function eeeMX3 { ( cd $pppMX3 && mvim README.md ) }
 
+##
+#/ mx-cp4
+export pppMX4='/Users/apollo.tang/9/repos/mx-cp4'
+alias gggMX4="cd $pppMX4"
+function eeeMX4 { ( cd $pppMX4 && mvim README.md ) }
+
+##
+#/ mx-cp5
+export pppMX5='/Users/apollo.tang/9/repos/mx-cp5'
+alias gggMX5="cd $pppMX5"
+function eeeMX5 { ( cd $pppMX5 && mvim README.md ) }
+
 ################################################
 #echo '.bash_aliases_device_lights reading done'
