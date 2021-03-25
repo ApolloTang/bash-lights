@@ -73,9 +73,16 @@ dir_scripts2=$HOME/2/2-sy/scripts
   fi
 
 
-#/ added by haskell compiler enviroment
+
+#/ Added by haskell compiler enviroment
 #/ I think it is enviroment setup for haskell compiler
-#/ --------------------------------------------
+#/ ----------------------------------------------------
 [ -f "/Users/apollotang/.ghcup/env" ] && source "/Users/apollotang/.ghcup/env" # ghcup-env
 
 
+
+#/ Added by nvm
+#/ -------------
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion

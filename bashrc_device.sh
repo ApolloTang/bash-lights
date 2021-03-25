@@ -60,12 +60,6 @@ export PATH=${PATH}:${ANDROID_HOME}/platform-tools
 
 
 ###
-#/ for nvm
-export NVM_DIR="/Users/apollotang/.nvm"
-[ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
-
-
-###
 #/ Scala
 export SCALA_HOME="$HOME/opt/local/scala-2.11.2/bin"
 
@@ -73,6 +67,7 @@ export SCALA_HOME="$HOME/opt/local/scala-2.11.2/bin"
 ###
 #/ local directory
 export dir_vendor_server="/Users/apollotang/0/z-local/vendor-server/"
+
 
 ###
 #/ sqlite installed via brew
