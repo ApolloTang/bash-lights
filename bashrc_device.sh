@@ -26,6 +26,7 @@ PATH="$HOME/Applications/kdiff3.app/Contents/MacOS":$PATH   # kdiff3
 # PATH=/Users/apollo.tang/opt/local/anaconda3/bin:$PATH
 PATH=/usr/local/Cellar/coreutils/8.30/bin:$PATH             # manually link coreutil b/c gsync has already symlinc to /Library/Application\ Support/GoodSync/gsync
 PATH=/Users/apollo.tang/.yarn/bin:$PATH
+PATH=/Users/apollo.tang/opt/bin:$PATH
 
 
 #/ PATH Natural Order
