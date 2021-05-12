@@ -144,9 +144,9 @@ function eeeVimrc { ( cd $pppVimrc && mvim dot-vimrc ) }
 
 ##
 #/ things to memorized (my cheat sheet)
-export pppMemo='/Users/apollo.tang/0/_g-frequent/things-2-memorize'
+export pppMemo='~/0/_g-frequent/things-2-memorize/things-2-memorize-content'
 alias gggMemo="cd $pppMemo"
-function eeeMemo { ( cd $pppMemo && mvim things-2-memorize-content ) }
+function eeeMemo { ( eval cd $pppMemo && mvim -c 'GGnerdPreview' main.txt ) }
 
 
 ##
