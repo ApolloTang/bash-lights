@@ -38,6 +38,8 @@ PATH=/Users/apollotang/opt/bin:$PATH
 #/ so the top one in the list take precedence
 #/ Natural order always has lower precedence to reverse order
 #/
+PATH="$PATH:$HOME/.kenv/kenvs/kenv-myscripts/bin"
+PATH="$PATH:$HOME/.kit/bin"
 PATH=$PATH:/Applications/MacVim.app/Contents/bin
 PATH=$PATH:"$HOME/opt/local/scala-2.11.2/bin"
 PATH=$PATH:"/usr/local/Cellar/neovim-dot-app/HEAD/bin/gnvim"
