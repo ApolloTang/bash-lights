@@ -1,0 +1,5 @@
+<RO>/Users/apollo.tang/.zshrc -> /Users/apollo.tang/1/1-sy/configurations/bash/bash-lights/dot-bashrc
+
+
+
+
