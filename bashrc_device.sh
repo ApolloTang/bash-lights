@@ -47,6 +47,15 @@ PATH=$PATH:"$HOME/opt/devtools/autotools-bin/bin"
 
 export PATH
 
+###
+#/ Pyenv
+#/ See: https://realpython.com/intro-to-pyenv/
+#/
+export PYENV_ROOT="$HOME/.pyenv"
+command -v pyenv >/dev/null || export PATH="$PYENV_ROOT/bin:$PATH"
+eval "$(pyenv init -)"
+eval "$(pyenv virtualenv-init -)"  # this load pyenv-virtualenv automatically
+
 
 ###
 #/ Ruby
