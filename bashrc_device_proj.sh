@@ -142,6 +142,12 @@ alias gggVimrc="cd $pppVimrc"
 function eeeVimrc { ( cd $pppVimrc && mvim dot-vimrc ) }
 
 ##
+#/ ultisnips
+export pppSnips='/Users/apollotang/1/1-sy/dot-config/coc/ultisnips'
+alias gggSnips="cd $pppSnips"
+function eeeSnips { ( cd $pppSnips && mvim pppSnips ) }
+
+##
 #/ VScode
 export pppCoderc='/Users/apollotang/1/1-sy/configurations/vscode/vscode-setting'
 alias gggCoderc="cd $pppCoderc"
