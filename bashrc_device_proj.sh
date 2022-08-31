@@ -145,7 +145,7 @@ function eeeVimrc { ( cd $pppVimrc && mvim dot-vimrc ) }
 #/ VScode
 export pppCoderc='/Users/apollotang/1/1-sy/configurations/vscode/vscode-setting'
 alias gggCoderc="cd $pppCoderc"
-function eeeCoderc { ( cd $pppCoderc && mvim vscode-setting ) }
+function eeeCoderc { ( cd $pppCoderc && mvim settings.json ) }
 
 ##
 #/ ideavim
