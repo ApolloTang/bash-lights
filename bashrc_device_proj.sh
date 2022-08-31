@@ -145,7 +145,7 @@ function eeeVimrc { ( cd $pppVimrc && mvim dot-vimrc ) }
 #/ ultisnips
 export pppSnips='/Users/apollotang/1/1-sy/dot-config/coc/ultisnips'
 alias gggSnips="cd $pppSnips"
-function eeeSnips { ( cd $pppSnips && mvim pppSnips ) }
+function eeeSnips { ( cd $pppSnips && mvim . ) }
 
 ##
 #/ VScode
