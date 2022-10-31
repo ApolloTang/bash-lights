@@ -44,6 +44,7 @@ PATH=$PATH:/Applications/MacVim.app/Contents/bin
 PATH=$PATH:"$HOME/opt/local/scala-2.11.2/bin"
 PATH=$PATH:"/usr/local/Cellar/neovim-dot-app/HEAD/bin/gnvim"
 PATH=$PATH:"$HOME/opt/devtools/autotools-bin/bin"
+PATH="$PATH:/Users/apollotang/.local/bin"                   # Created by `pipx` on 2022-10-31 05:37:08
 
 export PATH
 
