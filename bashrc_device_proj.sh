@@ -4,6 +4,15 @@
 ################################################
 #
 
+
+#/ -- [Fix display arrangement] --------------------------------
+  function gggFixDispalyArrangement {
+    #/ see https://github.com/jakehilborn/displayplacer
+    displayplacer "id:D0998910-F2C1-4C6E-9927-39DE10F9B720 res:1280x800 color_depth:8 scaling:on origin:(0,0) degree:0" "id:4E789247-719F-65CC-08CD-51874EBDBFCD res:1920x1080 hz:60 color_depth:8 scaling:off origin:(-2124,-1080) degree:0" "id:FC5706FD-1A44-C34A-F3BF-370671F1E1F0 res:1920x1080 hz:60 color_depth:8 scaling:off origin:(1716,-1080) degree:0" "id:D7834EB5-1DC0-B021-36A9-853EF9CB10D5 res:1920x1080 hz:60 color_depth:8 scaling:off origin:(-204,-1080) degree:0"
+  }
+
+
+
 #/ [Application] --------------------------------
 
 #alias chromium='/Applications/Chromium.app/Contents/MacOS/Chromium &'
