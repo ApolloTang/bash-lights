@@ -171,7 +171,7 @@ function eeeIdeavimrc { ( cd $pppIdeavimrc && mvim dot-ideavimrc ) }
 
 ##
 #/ things to memorized (my cheat sheet)
-export pppMemo='~/0/_g-frequent/things-2-memorize/things-2-memorize-content'
+export pppMemo='~/0/_g-frequent/things-2-memorize/contents'
 alias gggMemo="cd $pppMemo"
 function eeeMemo { ( eval cd $pppMemo && mvim -c 'GGnerdPreview' main.txt ) }
 function eeeMemoCode { ( eval cd $pppMemo && code . ) }
