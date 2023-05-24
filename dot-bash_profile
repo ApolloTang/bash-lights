@@ -23,6 +23,8 @@
 #/     $HOME/.bashrc
 #/
 
+
+
 ##
 #/ [Important variable] ------------------------------------------
   export dir_sy=/Users/apollotang/1/1-sy
@@ -39,6 +41,7 @@
   # export XDG_CONFIG_HOME="$dir_sy/dot-config"
 
 
+
 ##
 #/ [Load .bashrc] ------------------------------------------------
   if [ -n $BASH_VERSION ]; then
@@ -46,6 +49,7 @@
       . $dir_bash_device_config/dot-bashrc
     fi
   fi
+
 
 
 ##
@@ -58,6 +62,7 @@
   #  test -r /sw2/bin/init.sh && . /sw2/bin/init.sh
 
 
+
 ##
 #/ [MacPorts] ----------------------------------------------------
 
@@ -67,10 +72,12 @@
   #
 
 
+
 ##
 #/ [GoodSync] -----------------------------------------------------
   export PATH="/Users/apollotang/Library/Application Support/GoodSync":$PATH
   export PATH="/Library/Application Support/GoodSync":$PATH
+
 
 
 ##
@@ -80,7 +87,6 @@
   source '/Users/apollotang/google-cloud-sdk/path.bash.inc'
   #/ The next line enables bash completion for gcloud.
   source '/Users/apollotang/google-cloud-sdk/completion.bash.inc'
-
 
 
 
@@ -96,10 +102,12 @@
 #  alias info-path='echo $PATH | sed s/:/\\n/g | less'
 #/   ref: stackoverflow.com/questions/18234378/using-sed-to-split-a-string-with-a-delimiter
 #/
-#/  for osx
+#/ for osx
 alias info-path="echo $PATH | sed 's/:/\\`echo -e '\n\r'`/g' | cat"  #for osx
 #/  in the above, not sure why "\\" before first "`" but not b4 the second "`"
 #/  ref http://stackoverflow.com/questions/723157/how-to-insert-a-newline-in-front-of-a-pattern
+
+
 
 # added when install haskell compile but .bashrc already loaded as dot-bashrc above
 # [[ -f ~/.bashrc ]] && source ~/.bashrc # ghcup-env
