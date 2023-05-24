@@ -4,20 +4,19 @@
 export IAM=lights
 export PLATFORM=mac
 export RIPGREP_CONFIG_PATH="/Users/apollotang/1/1-sy/configurations/ripgrep/dot.ripgreprc"
-# export VIM_IN_MACVIM_BIN="/usr/local/Cellar/macvim/HEAD-79541d2_2/MacVim.app/Contents/MacOS/Vim"
-# export ONI_NEOVIM_PATH="/usr/local/Cellar/neovim/0.3.4/bin/nvim"
 
 
-### Enable Glob support
+
+#/ Enable Glob support
 #/ https://gist.github.com/reggi/475793ea1846affbcfe8
 shopt -s globstar
 
 
+
 #/ PATH Reverse Order:
 #/ -------------------
-#/ The last one on the list is place to the begining of the PATH
-#/ so the bottom one in the list take precedence
-#/ Reverse order always has higher precedence over natural order
+#/ The last one on the list took precedence
+#/ Reverse order has higher precedence over natural order
 #/
 PATH="$HOME/.gem/bin":$PATH
 PATH="$HOME/script/bin2":$PATH
@@ -34,9 +33,8 @@ PATH=/Users/apollotang/opt/bin:$PATH
 
 #/ PATH Natural Order
 #/ -------------------
-#/ The first one on the list is placed on begining the PATH
-#/ so the top one in the list take precedence
-#/ Natural order always has lower precedence to reverse order
+#/ The top one in the list take precedence
+#/ Natural order has lower precedence to reverse order
 #/
 PATH="$PATH:$HOME/.kenv/kenvs/kenv-myscripts/bin"
 PATH="$PATH:$HOME/.kit/bin"
@@ -48,6 +46,8 @@ PATH="$PATH:/Users/apollotang/.local/bin"                   # Created by `pipx` 
 
 export PATH
 
+
+
 ###
 #/ Pyenv
 #/ See: https://realpython.com/intro-to-pyenv/
@@ -58,11 +58,13 @@ eval "$(pyenv init -)"
 eval "$(pyenv virtualenv-init -)"  # this load pyenv-virtualenv automatically
 
 
+
 ###
 #/ pipx completions
 #/ See: https://pypa.github.io/pipx/installation/
 #/
 eval "$(register-python-argcomplete pipx)"
+
 
 
 ###
@@ -71,10 +73,12 @@ eval "$(register-python-argcomplete pipx)"
 export PIPENV_VENV_IN_PROJECT=1
 
 
+
 ###
 #/ Ruby
 export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
 export GEM_HOME="$HOME/.gem"       # https://stackoverflow.com/a/53949737
+
 
 
 ###
@@ -85,14 +89,17 @@ export PATH=${PATH}:${ANDROID_HOME}/tools
 export PATH=${PATH}:${ANDROID_HOME}/platform-tools
 
 
+
 ###
 #/ Scala
 export SCALA_HOME="$HOME/opt/local/scala-2.11.2/bin"
 
 
+
 ###
 #/ local directory
 export dir_vendor_server="/Users/apollotang/0/z-local/vendor-server/"
+
 
 
 ###
@@ -105,9 +112,11 @@ export dir_vendor_server="/Users/apollotang/0/z-local/vendor-server/"
     export PKG_CONFIG_PATH="/usr/local/opt/sqlite/lib/pkgconfig"
 
 
+
 ###
 #/ React Native
 export REACT_EDITOR="mvim"
+
 
 
 ###/ Run things
